@@ -30,13 +30,13 @@ class GOL extends Component {
     const {length, width} = this.props;
     const updatedCells = this.main(length, width, this.state.aliveCells);
     this.state.aliveCells.forEach(cell => document.getElementById(cell).innerHTML = " ");
-    updatedCells.forEach(cell => document.getElementById(cell).innerHTML = "&#128512");
+    updatedCells.forEach(cell => document.getElementById(cell).innerHTML = "&#9917;");
     this.setState({ aliveCells: updatedCells});
   }
 
   selectAlive(id){
     !this.state.aliveCells.includes(id) && this.state.aliveCells.push(id);
-    document.getElementById(id).innerHTML = "&#128512";
+    document.getElementById(id).innerHTML = "&#9917;";
   }
 
   redirectToRules(){
