@@ -50,7 +50,7 @@ class GOL extends Component {
   render() {
     return (
       <div className="main">
-        <div className="heading"> GAME OF LIFE </div>
+        <div className="heading"> G<i class="fab fa-asymmetrik"></i>ME  OF  LIFE </div>
         <div className="page-view">
           {this.createTable(this.props.length, this.props.width, this.selectAlive)}
           <div className="options ">
